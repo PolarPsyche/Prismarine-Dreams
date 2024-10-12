@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "pdreams",
+  "version": "${version}",
+  "name": "Prismarine Dreams",
+  "description": "A mod that adds more uses for Prismarine!",
+  "authors": [
+    "PolarPsyche"
+  ],
+  "contact": {
+    "repo": "https://github.com/PolarPsyche/Prismarine-Dreams"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/prismarine_dreams/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.github.polarpsyche.prismarine_dreams.PrismarineDreamsClient"
+    ],
+    "main": [
+      "com.github.polarpsyche.prismarine_dreams.PrismarineDreams"
+    ],
+    "fabric-datagen": [
+      "com.github.polarpsyche.prismarine_dreams.PrismarineDreamsDataGenerator"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
