@@ -1,17 +1,21 @@
 package com.github.polarpsyche.prismarine_dreams;
 
+import com.github.polarpsyche.prismarine_dreams.item.ModItemGroups;
+import com.github.polarpsyche.prismarine_dreams.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class PrismarineDreams implements ModInitializer {
-    public static final String MODID = "pdreams";
+    public static final String MODID = "prismarine_dreams";
     public static final Logger LOGGER = LoggerFactory.getLogger(MODID);
 
 
     @Override
     public void onInitialize() {
+        ModItems.registerModItems();
+        ModItemGroups.registerItemGroups();
 
-        LOGGER.info("Making Prismarine useful...");
+        LOGGER.info("Is prismarine useful now?");
     }
 }
